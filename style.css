@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&family=Public+Sans&family=Roboto:wght@300;400&family=Ubuntu&family=Ysabeau+Infant:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head-div1
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    background-color: black;
+}
+.div1-subdiv
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding:5px 10px;
+    cursor: pointer;
+}
+.div1-subdiv .head-i 
+{
+    color: yellow;
+}
+.div1-subdiv p
+{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.head-div2
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    height: 50px;
+}
+.head-div2 p 
+{
+    padding: 20px 5px 5px 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.navlinks
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.navlinks li:hover  
+{
+    background-color:yellow;
+}
+.navlinks li , .navlinks a 
+{
+    list-style-type:none;
+    text-decoration: none;
+    color: black;
+    padding: 20px 5px 5px 5px;
+    font-family: 'Poppins', sans-serif;
+}
+.head-div2 .bar 
+{
+    display:none;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.head-div2 .xmark 
+{
+    display: none;
+    padding-top: 20px;
+}
+
+
+@media(max-width:740px)
+{
+    .div1-subdiv p 
+    {
+        display: none;
+    }
+    .navlinks
+    {
+        display: none;
+        flex-direction: column;
+        top: 150px;
+        left: -10%;
+    }
+    .head-div2 .bar 
+    {
+        display: block;
+        transition: display 2s;
+    }
+
+}
+@media(max-width:295px)
+{
+    .navlinks li 
+    {
+        position:relative;
+        font-size: 12px;
+        left: -25%;
+    }
+}

@@ -87,22 +87,27 @@
     {
         display: none;
         flex-direction: column;
-        top: 150px;
+        top: 120px;
         left: -10%;
     }
     .head-div2 .bar 
     {
         display: block;
-        transition: display 2s;
+    }
+    .navlinks li
+    {
+        color: yellow;
+        padding: 10px 5px 5px 5px;
     }
 
 }
 @media(max-width:295px)
 {
-    .navlinks li 
+    .navlinks
     {
         position:relative;
         font-size: 12px;
         left: -25%;
+        text-align: center;
     }
 }

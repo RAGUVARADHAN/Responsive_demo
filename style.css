@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&family=Public+Sans&family=Roboto:wght@300;400&family=Ubuntu&family=Ysabeau+Infant:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gabarito&family=Poppins&family=Public+Sans&family=Roboto:wght@300;400&family=Ubuntu&family=Ysabeau+Infant:wght@300&display=swap');
 *
 {
     margin: 0;
@@ -35,9 +36,10 @@
 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0px 20px 0px 20px;
-    height: 50px;
+    height: auto;
+    color: white;
+    background-color: black;
 }
 .head-div2 p 
 {
@@ -55,6 +57,9 @@
 .navlinks li:hover  
 {
     background-color:yellow;
+}
+.navlinks{
+    margin: 20px;
 }
 .navlinks li , .navlinks a 
 {
@@ -76,6 +81,50 @@
     padding-top: 20px;
 }
 
+#home 
+{
+    border: 1px solid black;
+    padding: 100px;
+    background-color: black;
+    color: white;
+}
+#home .home-head
+{
+    font-family: 'Gabarito', cursive;
+    font-size: 48px;
+    font-weight: 700;
+}
+#home .home-cont
+{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+#home span 
+{
+    color:rgb(255, 255, 0);
+}
+.home-flex a 
+{
+    text-decoration: none;
+    color: black;
+}
+.home-flex button 
+{
+    border: none;
+    padding: 15px 40px;
+    margin-top: 30px;
+}
+.home-flex button a 
+{
+    font-family: 'Poppins', sans-serif;
+}
+.butt2, .butt2 a  
+{
+    background-color: rgb(234, 234, 14);
+    color: white;
+    font-weight: 600;
+}
 
 @media(max-width:740px)
 {
@@ -85,9 +134,10 @@
     }
     .navlinks
     {
-        display: none;
+        display:none;
+        position: relative;
         flex-direction: column;
-        top: 120px;
+        top: 50px;
         left: -10%;
         text-align: center;
     }
@@ -100,8 +150,32 @@
         color: yellow;
         padding: 10px 5px 5px 5px;
     }
+    .navlinks li a 
+    {
+        color: white;
+    }
+    #home .home-head
+    {
+        text-align: center;
+        font-size: 48px;
+    }
+    .home-cont
+    {
+        font-size: 16px;
+        text-align: center;
+    }
+    .home-head span 
+    {
+        text-align: center;
+        font-size: 48px;
+    }
+    .home-flex
+    {
+        text-align: center;
+    }
 
 }
+
 @media(max-width:295px)
 {
     .navlinks

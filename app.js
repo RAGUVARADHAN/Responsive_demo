@@ -7,13 +7,11 @@ bar.addEventListener("click",()=>
     {
         navlinks.style.display="none"
         bar.classList.toggle("fa-xmark");
-        console.log(bar.classList);
     }
     else
     {
         navlinks.style.display="block";
         bar.classList.toggle("fa-xmark");
-        console.log(bar.classList);
     }
 })
 

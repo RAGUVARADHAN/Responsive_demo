@@ -58,14 +58,15 @@
 {
     background-color:yellow;
 }
-.navlinks{
+.navlinks
+{
     margin: 20px;
 }
 .navlinks li , .navlinks a 
 {
     list-style-type:none;
     text-decoration: none;
-    color: black;
+    color:white;
     padding: 20px 5px 5px 5px;
     font-family: 'Poppins', sans-serif;
 }
@@ -91,7 +92,7 @@
 #home .home-head
 {
     font-family: 'Gabarito', cursive;
-    font-size: 48px;
+    font-size: clamp(25px,3vw,5vw);
     font-weight: 700;
 }
 #home .home-cont
@@ -99,10 +100,12 @@
     font-family: 'Poppins', sans-serif;
     margin-top: 20px;
     line-height: 1.5;
+    font-size: clamp(12px,1vw,2vw);
 }
 #home span 
 {
     color:rgb(255, 255, 0);
+    font-size: clamp(20px,3vw,5vw);
 }
 .home-flex a 
 {
@@ -115,13 +118,31 @@
     padding: 15px 40px;
     margin-top: 30px;
 }
+.home-flex-1:hover 
+{
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.home-flex-1:hover .butt1-cont  
+{
+    color: white;
+}
+.home-flex-2:hover
+{
+    border: 1px solid yellow;
+    background-color: transparent;
+} 
 .home-flex button a 
 {
     font-family: 'Poppins', sans-serif;
 }
-.butt2, .butt2 a  
+.butt2  
 {
     background-color: rgb(234, 234, 14);
+}
+.butt2 a 
+{
     color: white;
     font-weight: 600;
 }
@@ -154,10 +175,14 @@
     {
         color: white;
     }
+    .navlinks li a:hover 
+    {
+        color: black;
+    }
     #home .home-head
     {
         text-align: center;
-        font-size: 48px;
+        /* font-size: 48px; */
     }
     .home-cont
     {

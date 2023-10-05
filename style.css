@@ -84,6 +84,12 @@
     display: none;
     padding-top: 20px;
 }
+.home 
+{
+    background-image: url("images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
 
 #home 
 {
@@ -220,7 +226,7 @@
 .service-flexes
 {
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
     font-family: 'Inter', sans-serif;
     margin-top: 50px;
@@ -235,6 +241,7 @@
     display: flex;
     flex-direction: column;
     padding: 30px;
+    margin-right: 25px;
 }
 .service-flex p:nth-child(1)
 {
@@ -251,16 +258,137 @@
 {
     background-color:rgb(234, 234, 14);
     border: 1px solid transparent;
-    width: 150px;
     height: 50px;
     margin-top: 20px;
-    margin-left:27%;
+    cursor: pointer;
 }
 .service-flex button a 
 {
     text-decoration: none;
     color: white;
 }
+.service-flex button:hover 
+{
+    background-color: white;
+    border: 1px solid rgb(234, 234, 14);
+}
+.service-flex button:hover a 
+{
+    color: rgb(234, 234, 14);
+}
+.client 
+{
+    padding: 100px;
+    text-align: center;
+}
+.client > img:nth-child(2)
+{
+    height:200px;
+    width: 200px;
+    margin-top: 50px;
+}
+.client > p:nth-child(1)
+{
+    font-family: 'Gabarito', cursive;
+    font-weight: 700;
+    font-size:48px;
+}
+.client > p:nth-child(3)
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+.client > p:nth-child(4)
+{
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+}
+.touch 
+{
+    background-image: url("images/contact-bg.jpg");
+    height:auto;
+    width:auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: center;
+}
+.touch > div:nth-child(1)
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+.touch div > p:nth-child(1)
+{
+    font-family: 'Gabarito', cursive;
+    font-weight: 700;
+    font-size:48px;
+    color: #fff;
+}
+.touch input[type=text], input[type=email], input[type=number]
+{
+    width:50%;
+    height:50px;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    padding: 10px;
+}
+.touch input[type=text]::placeholder , input[type=email]::placeholder , input[type=number]::placeholder
+{
+    color: black;
+    font-family: 'Inter', sans-serif;
+}
+.touch textarea 
+{
+    margin-top: 30px;
+    width:50%;
+    height:auto;
+}
+.touch textarea::placeholder
+{
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: black;
+    font-family: 'Inter', sans-serif;
+}
+.touch textarea:focus
+{
+    border: none;
+    outline: none;
+}
+.touch div > button:nth-child(6)
+{
+    margin-top: 30px;
+    padding: 10px 50px;
+    background-color:rgb(234, 234, 14);
+    border:none;
+}
+.touch div > button:nth-child(6) a 
+{
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    
+}
+.touch div > button:nth-child(6):hover 
+{
+    background-color: transparent;
+    border: 1px solid rgb(234, 234, 14);
+    cursor: pointer;
+}
+.touch div > button:nth-child(6):hover a 
+{
+    color: rgb(234, 234, 14);
+}
+
+
+
+
 @media(max-width:740px)
 {
     .div1-subdiv p 
@@ -311,10 +439,6 @@
     {
         text-align: center;
     }
-    #about
-    {
-        flex-direction: column-reverse;
-    }
     .about-cont 
     {
         border: 1px solid whitesmoke;
@@ -337,7 +461,29 @@
     {
         margin-bottom: 20px;
     }
+    .service-flex button 
+    {
+        margin-left:0;
+    }
+    .client
+    {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
 
+}
+@media(max-width:1000px)
+{
+    .service-flexes
+    {
+        flex-direction: column;
+    }
+    .service-flex
+    {
+        margin-bottom: 20px;
+    }
 }
 @media(max-width:500px)
 {
@@ -355,5 +501,16 @@
         font-size: 12px;
         left: -25%;
         text-align: center;
+    }
+}
+@media(max-width:870px)
+{
+    #about
+    {
+        flex-direction: column-reverse;
+    }
+    .about-cont
+    {
+        right: 0px;
     }
 }
